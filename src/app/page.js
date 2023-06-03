@@ -27,109 +27,122 @@ export default function Home() {
           <input className="placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="search" name="search"/>
         </section>
         <section>
-          <div className="flex flex-col">
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className=" flex items-center">
-                <Image src={firstPNG} className="w-full h-32 object-contain"/>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={firstPNG} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
                 <h2 className="font-bold text-xl">
                   Using Abstract
                 </h2>
                 <p className="text-lg">
                   Abstract lets you manage, version, and document your designs in one place.
                 </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer">
                   Learn More →
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className=" flex items-center">
-                <Image src={secondPNG} className="w-full h-32 object-contain"/>
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={secondPNG} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
                 <h2 className="font-bold text-xl">
-                  Manage organizations, teams, and projects                </h2>
-                <p className="text-lg">
-                Use Abstract organizations, teams, and projects to organize your people and your work.
-                </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
-                  Learn More →
-                </a>
-              </div>
-            </div>
-
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className="flex items-center">
-                <Image src={thirdPNG} className="w-full h-32 object-contain"/>
-              </div>
-              <div className="flex flex-col gap-y-4">
-                <h2 className="font-bold text-xl">
-                  Using Abstract
+                  Manage organizations, teams, and projects
                 </h2>
                 <p className="text-lg">
-                  Abstract lets you manage, version, and document your designs in one place.
+                  Use Abstract organizations, teams, and projects to organize your people and your work.
                 </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer">
                   Learn More →
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className=" flex items-center">
-                <Image src={fourthPNG} className="w-full h-32 object-contain"/>
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={thirdPNG} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
                 <h2 className="font-bold text-xl">
-                  Using Abstract
+                  Authenticate to Abstract
                 </h2>
                 <p className="text-lg">
-                  Abstract lets you manage, version, and document your designs in one place.
+                  Set up and configure your SSO, SCIM and Just-In-Time provisioning.
                 </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer">
                   Learn More →
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className="flex items-center">
-                <Image src={fifthPNG} className="w-full h-32 object-contain"/>
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={fourthPNG} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
                 <h2 className="font-bold text-xl">
-                  Using Abstract
+                  Manage your account
                 </h2>
                 <p className="text-lg">
-                  Abstract lets you manage, version, and document your designs in one place.
+                  Configure your account settings, such as your email, profile details, and password.
                 </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer">
                   Learn More →
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-row px-6 pt-12 gap-x-4">
-              <div className=" flex items-center">
-                <Image src={sixthPNG} className="w-full h-32 object-contain"/>
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={fifthPNG} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
                 <h2 className="font-bold text-xl">
-                  Using Abstract
+                  Manage billing
                 </h2>
                 <p className="text-lg">
-                  Abstract lets you manage, version, and document your designs in one place.
+                  Change subscription and payment details.
                 </p>
-                <a className=" text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer">
+                  Learn More →
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-center h-40">
+                <div className="w-32 h-32">
+                  <Image src={sixthPNG} className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 mt-4 items-center justify-center text-center">
+                <h2 className="font-bold text-xl">
+                  Abstract support
+                </h2>
+                <p className="text-lg">
+                  Get in touch with a human.
+                </p>
+                <a className="text-base text-blue-400 cursor-pointer">
                   Learn More →
                 </a>
               </div>
             </div>
           </div>
-        </section>
+       </section>
       </main>
       <footer>
         
