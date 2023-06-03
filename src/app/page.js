@@ -5,23 +5,29 @@ import thirdPNG from "../../public/thirdPNG.png"
 import fourthPNG from "../../public/fourthPNG.png"
 import fifthPNG from "../../public/fifthPNG.png"
 import sixthPNG from "../../public/sixthPNG.png"
+import logo from "../../public/logo.svg"
 
 export default function Home() {
   return (
     <div>
       <nav className="flex justify-between items-center py-7 px-12 bg-black text-white">
-        <div className="flex flex-col ">
-          <a className="pb-12 text-xl">Abstract</a>
-          <a className="text-xl">Help Center</a>  
+        <div className="flex flex-col gap-y-11 md:flex-row md gap-x-10">
+          <div className="flex flex-row gap-x-4 cursor-pointer transition-opacity duration-300 hover:opacity-80">
+            <div className="bg-white text-white rounded-full  w-1/5 h-full flex items-center justify-center md:">
+            <Image src={logo} className="lg:w-10"/>
+            </div>
+            <a className=" text-xl lg:text-2xl">Abstract</a>
+          </div>
+          <a className="text-xl cursor-pointer hover:underline lg:text-2xl">Help Center</a>  
         </div>
-        <div className="flex flex-col ">
-          <button className="mb-6 text-xl bg-black border-2 border-white py-2 px-4 rounded-lg">Submit a request</button>
-          <button className="text-xl bg-purple-600 rounded-lg py-2">Sign In</button>
+        <div className="flex flex-col gap-y-8 md:flex-row md:gap-x-10">
+          <button className=" text-xl bg-black border-2 border-white py-2 px-4 rounded-lg lg:text-2xl">Submit a request</button>
+          <button className="text-xl bg-purple-600 rounded-lg py-2 px-4 transition-bg duration-300 hover:bg-white hover:text-black lg:text-2xl">Sign In</button>
         </div>
       </nav>
       <main>
         <section className="px-6 py-24 flex flex-col items-center justify-center gap-12 bg-purple-200">
-          <h1 className="text-center text-4xl font-medium">
+          <h1 className="text-center text-4xl font-medium md:text-5xl lg:text-6xl">
             How can we help you?
           </h1>
           <input className="placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="search" name="search"/>

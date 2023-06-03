@@ -11,3 +11,9 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.svg {
+  color: white;
+  background-color: white;
+  width: 300px;
+}
