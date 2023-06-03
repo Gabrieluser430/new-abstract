@@ -23,11 +23,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-y-8 md:flex-row md:gap-x-10">
           <button className=" text-xl bg-black border-2 border-white py-2 px-4 rounded-lg lg:text-2xl">Submit a request</button>
-          <button className="text-xl bg-purple-600 rounded-lg py-2 px-4 transition-bg duration-300 hover:bg-white hover:text-black lg:text-2xl">Sign In</button>
+          <button className="text-xl bg-indigo-500 rounded-lg py-2 px-4 transition-bg duration-300 hover:bg-white hover:text-black lg:text-2xl">Sign In</button>
         </div>
       </nav>
       <main>
-        <section className="px-6 py-24 flex flex-col items-center justify-center gap-12 bg-purple-200">
+        <section className="px-6 py-24 flex flex-col items-center justify-center gap-12 bg-custom-background">
           <h1 className="text-center text-4xl font-medium md:text-5xl lg:text-6xl">
             How can we help you?
           </h1>
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
             <div className="flex flex-col bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center justify-center h-40">
                 <div className="w-32 h-32">
@@ -51,7 +51,7 @@ export default function Home() {
                 <p className="text-lg">
                   Abstract lets you manage, version, and document your designs in one place.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
@@ -70,7 +70,7 @@ export default function Home() {
                 <p className="text-lg">
                   Use Abstract organizations, teams, and projects to organize your people and your work.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 <p className="text-lg">
                   Set up and configure your SSO, SCIM and Just-In-Time provisioning.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
@@ -108,7 +108,7 @@ export default function Home() {
                 <p className="text-lg">
                   Configure your account settings, such as your email, profile details, and password.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                 <p className="text-lg">
                   Change subscription and payment details.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 <p className="text-lg">
                   Get in touch with a human.
                 </p>
-                <a className="text-base text-blue-400 cursor-pointer">
+                <a className="text-base text-blue-400 cursor-pointer hover:underline">
                   Learn More →
                 </a>
               </div>
