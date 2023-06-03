@@ -6,6 +6,7 @@ import fourthPNG from "../../public/fourthPNG.png"
 import fifthPNG from "../../public/fifthPNG.png"
 import sixthPNG from "../../public/sixthPNG.png"
 import logo from "../../public/logo.svg"
+import outraSeta from "../../public/outraSeta.svg"
 
 export default function Home() {
   return (
@@ -30,7 +31,10 @@ export default function Home() {
           <h1 className="text-center text-4xl font-medium md:text-5xl lg:text-6xl">
             How can we help you?
           </h1>
-          <input className="placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="search" name="search"/>
+          <div className="w-full max-w-3xl relative">
+            <Image src={outraSeta} className="absolute cursor-pointer right-4 top-5"/>
+           <input className="placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm md:text-lg" placeholder="Search for anything..." type="search" name="search"/>
+          </div>
         </section>
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
@@ -150,8 +154,46 @@ export default function Home() {
           </div>
        </section>
       </main>
-      <footer>
-        
+      <footer className="bg-black">
+        <div className="grid grid-cols-2 p-4 md:grid-cols-3">
+          <div className="flex flex-col items-center gap-y-2 text-white">
+            <h3 className="p-4 text-xl font-bold">Abstract</h3>
+            <a className="cursor-pointer hover:underline">Start Trial</a>
+            <a className="cursor-pointer hover:underline">Pricing</a>
+            <a className="cursor-pointer hover:underline">Download</a>
+          </div>
+
+          <div className="flex flex-col items-center gap-y-2 text-white">
+            <h3 className="p-4 text-xl font-bold">Resources</h3>
+            <a className="cursor-pointer hover:underline">Blog</a>
+            <a className="cursor-pointer hover:underline">Help Center</a>
+            <a className="cursor-pointer hover:underline">Release Notes</a>
+            <a className="cursor-pointer hover:underline">Status</a>
+          </div>
+
+          <div className="flex flex-col items-center gap-y-2 text-white">
+            <h3 className="p-4 text-xl font-bold">Community</h3>
+            <a className="cursor-pointer hover:underline">Twitter</a>
+            <a className="cursor-pointer hover:underline">LinkedIn</a>
+            <a className="cursor-pointer hover:underline">Dribbble</a>
+            <a className="cursor-pointer hover:underline">Podcast</a>
+          </div>
+
+          <div className="flex flex-col items-center gap-y-2 text-white">
+            <h3 className="p-4 text-xl font-bold">Company</h3>
+            <a className="cursor-pointer hover:underline">About Us</a>
+            <a className="cursor-pointer hover:underline">Careers</a>
+            <a className="cursor-pointer hover:underline">Legal</a>
+            <h4 className="font-bold">Contact Us</h4>
+            <p>info@abstract.com</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-y-2 text-white pt-4 md:mt-10">
+            <h3 className="font-medium">© Copyright 2022</h3>
+            <p className="font-medium">Abstract Studio Design, Inc.</p>
+            <p className="font-medium">All Rights Reserved</p>
+          </div>
+        </div>
       </footer>
     </div>
   )
