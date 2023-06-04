@@ -6,7 +6,7 @@ import fourthPNG from "../../public/fourthPNG.png"
 import fifthPNG from "../../public/fifthPNG.png"
 import sixthPNG from "../../public/sixthPNG.png"
 import logo from "../../public/logo.svg"
-import outraSeta from "../../public/outraSeta.svg"
+import seta from "../../public/seta.svg"
 
 export default function Home() {
   return (
@@ -32,8 +32,8 @@ export default function Home() {
             How can we help you?
           </h1>
           <div className="w-full max-w-3xl relative">
-            <Image src={outraSeta} className="absolute cursor-pointer right-4 top-5"/>
-           <input className="placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm md:text-lg" placeholder="Search for anything..." type="search" name="search"/>
+            <Image src={seta} className="absolute cursor-pointer left-4 top-5 w-6"/>
+           <input className=" indent-4 placeholder:italic placeholder:text-slate-500 block bg-white  w-full max-w-3xl  border border-slate-500 rounded-md py-4 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm md:text-lg" placeholder="Search for anything..." type="search" name="search"/>
           </div>
         </section>
         <section>
