@@ -11,19 +11,19 @@ import outraSeta from "../../public/outraSeta.svg"
 export default function Home() {
   return (
     <div>
-      <nav className="flex justify-between items-center py-7 px-12 bg-black text-white">
-        <div className="flex flex-col gap-y-11 md:flex-row md gap-x-10">
+      <nav className="flex justify-between items-center py-7 px-8 sm:px-10 md:px-12 bg-black text-white">
+        <div className="flex flex-col gap-y-11 md:flex-row md:gap-x-10">
           <div className="flex flex-row gap-x-4 cursor-pointer transition-opacity duration-300 hover:opacity-80">
-            <div className="bg-white text-white rounded-full  w-1/5 h-full flex items-center justify-center md:">
+            <div className="bg-white text-white rounded-full  w-1/5 h-full flex items-center justify-center">
             <Image src={logo} className="lg:w-10"/>
             </div>
-            <a className=" text-xl lg:text-2xl">Abstract</a>
+            <a className=" text-base lg:text-2xl sm:text-xl">Abstract</a>
           </div>
-          <a className="text-xl cursor-pointer hover:underline lg:text-2xl">Help Center</a>  
+          <a className="text-base cursor-pointer hover:underline lg:text-2xl sm:text-xl">Help Center</a>  
         </div>
         <div className="flex flex-col gap-y-8 md:flex-row md:gap-x-10">
-          <button className=" text-xl bg-black border-2 border-white py-2 px-4 rounded-lg lg:text-2xl">Submit a request</button>
-          <button className="text-xl bg-indigo-500 rounded-lg py-2 px-4 transition-bg duration-300 hover:bg-white hover:text-black lg:text-2xl">Sign In</button>
+          <button className=" text-base bg-black border-2 border-white py-2 px-4 rounded-lg lg:text-2xl sm:text-xl">Submit a request</button>
+          <button className="text-base bg-indigo-500 rounded-lg py-2 px-4 transition-bg duration-300 hover:bg-white hover:text-black lg:text-2xl sm:text-xl ">Sign In</button>
         </div>
       </nav>
       <main>
